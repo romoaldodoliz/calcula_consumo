@@ -1,0 +1,20 @@
+header {
+	font-family: 'Dongle', sans-serif;
+}
+
+body {
+	font-family: 'Dongle', sans-serif;
+}
+
+.primeiro_titulo_inicial {
+	font-size: 42px;
+	font-style: bold;
+	text-align: center;
+	padding: 25px;
+}
+
+.subtitulo_inicial {
+	font-size: 24px;
+	text-align: center;
+	padding: 5px;
+}
