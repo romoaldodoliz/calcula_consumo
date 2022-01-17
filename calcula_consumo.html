@@ -7,10 +7,38 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 </head>
+	<div class="fundo">
 <header class="titulo_inicial">
-	<h1 class="primeiro_titulo_inicial">Álcool ou Gasolina? ⛽</h1>
+	<h1 class="primeiro_titulo_inicial">Etanol ou Gasolina? ⛽</h1>
 	<h2 class="subtitulo_inicial">Insira aqui os valores do combustível</h2>
-	<p class="btns_inicial">Qual o valor da gasolina?
+<body>
+	<p class="btns_inicial">Qual o valor da gasolina?</p>
 	<input type="number" id="gasolina">
-	<p class="btns_inicial">Qual o valor do etanol?
+	<p class="btns_inicial">Qual o valor do etanol?</p>
 	<input type="number" id="etanol">
+	<br>
+	<br>
+	<button class="btn_calcula" onclick="clicar()">Calcule!</button>
+	</div>
+	<script>
+
+			var valorGasolina = document.getElementById("gasolina");
+			var valorEtanol = document.getElementById("etanol");
+			var valorGasolina = parseFloat(valorGasolina);
+			var valorEtanol = parseFloat(valorEtanol);
+
+		function clicar() {
+
+			var resultado = valorEtanol / valorGasolina;
+			return resultado;
+
+			if (resultado > 0.7) {
+				document.write("Compensa mais usar gasolina pra abastecer o carro.")
+			}
+			else {
+				document.write("Compensa mais usar etanol pra abastecer o carro.")
+			}
+
+		}
+	</script>
+</body>
