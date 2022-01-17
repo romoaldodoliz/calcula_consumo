@@ -1,9 +1,11 @@
 header {
 	font-family: 'Dongle', sans-serif;
+	text-align: center;
 }
 
 body {
 	font-family: 'Dongle', sans-serif;
+	text-align: center;
 }
 
 .primeiro_titulo_inicial {
@@ -22,4 +24,16 @@ body {
 .btns_inicial {
 	text-align: center;
 	font-size: 24px;
+	padding: 2.5px;
 }
+
+.btn_calcula {
+	text-align: center;
+	margin: 5px;
+	color: green;
+}
+
+.btn_calcula: hover {
+	background-color: greenyellow;
+}
+
