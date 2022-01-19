@@ -10,6 +10,7 @@
 <header class="titulo_inicial">
 	<h1 class="primeiro_titulo_inicial">Etanol ou Gasolina? ⛽</h1>
 	<h2 class="subtitulo_inicial">Insira aqui os valores do combustível</h2>
+</header>
 <body>
 	<p class="btns_inicial">Qual o valor da gasolina?</p>
 	<input type="number" id="gasolina">
@@ -17,26 +18,12 @@
 	<input type="number" id="etanol">
 	<br>
 	<br>
-	<button class="btn_calcula" onclick="clicar()">Calcule!</button>
-	<script>
-
-			var valorGasolina = document.getElementById("gasolina");
-			var valorEtanol = document.getElementById("etanol");
-			var valorGasolina = parseFloat(valorGasolina);
-			var valorEtanol = parseFloat(valorEtanol);
-
-		function clicar() {
-
-			var resultado = valorEtanol / valorGasolina;
-			return resultado;
-
-			if (resultado > 0.7) {
-				document.write("Compensa mais usar gasolina pra abastecer o carro.")
-			}
-			else {
-				document.write("Compensa mais usar etanol pra abastecer o carro.")
-			}
-
-		}
-	</script>
+	<button onclick="clicar()" class="btn_calcula">Calcule!</button>
+	<script src="calcula_consumo.js"></script>
 </body>
+<footer>
+	<p>Projeto desenvolvido por Fillipe Moreira</p>
+	<br><br>
+	2022
+</footer>
+</html>
